@@ -16,7 +16,7 @@ public class LowerBoundedWildCard {
         //only the integer or its super class can be passed
         
     public static void DisplayClass(List<? super Integer>list){
-        System.out.println(list.getClass());
+       
         System.out.println("This is the List : " + list);
     }
     public static void main(String[] args) {
@@ -33,5 +33,6 @@ public class LowerBoundedWildCard {
         
         List<Number> list2 = Arrays.asList(5,6,7,8,9);
         DisplayClass(list2);
+
     }
 }
